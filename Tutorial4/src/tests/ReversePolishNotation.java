@@ -23,7 +23,7 @@ public class ReversePolishNotation {
 		String divide = "/";
 		String mult = "*";
 
-		int result = 0;
+		Double result = 0.0;
 
 		for (int i = 0; i < arr.size(); i++) {
 
@@ -31,8 +31,8 @@ public class ReversePolishNotation {
 
 			if (token.equals(plus) || token.equals(minus) || token.equals(divide) || token.equals(mult)) {
 
-				int operandtwo = Integer.parseInt(polish.pop());
-				int operandone = Integer.parseInt(polish.pop());
+				Double operandtwo = Double.parseDouble(polish.pop());
+				Double operandone = Double.parseDouble(polish.pop());
 
 				if (token.equals(plus)) {
 					result = operandtwo + operandone;
@@ -44,7 +44,7 @@ public class ReversePolishNotation {
 					result = operandone * operandtwo;
 				}
 
-				polish.push(Integer.toString(result));
+				polish.push(Double.toString(result));
 
 			} else {
 
@@ -53,7 +53,9 @@ public class ReversePolishNotation {
 
 		}
 
-		result = Integer.parseInt(polish.pop());
+		result = Double.parseDouble(polish.pop());
 		System.out.println(result);
+		
+		scan.close();
 	}
 }
