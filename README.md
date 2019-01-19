@@ -1,4 +1,3 @@
 # DataStructures
-Code from data structures class
-
-## Most code probably doesn't work
+## Code from data structures class
+`System.out.println("Hello world!");`
