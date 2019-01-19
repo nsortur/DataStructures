@@ -1,11 +1,12 @@
 import java.util.Scanner;
+import java.util.Stack;
 import java.io.*;
 import java.util.ArrayList;
 
 public class ReversePolishNotation {
 	public static void main(String[] args) throws Exception {
 
-		Stack polish = new Stack();
+		Stack<String> polish = new Stack<String>();
 		Scanner scan;
 		scan = new Scanner(new BufferedReader(new FileReader("polish.txt")));
 		String token = "";

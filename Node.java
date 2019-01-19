@@ -1,17 +1,16 @@
 public class Node
 {
-    int value;
+    String value;
     Node next;
     
-
-    public Node(int v) {
-        value = v;
+    public Node(String v) {
+    	value = v;
     }
 
-    public int get() {
+    public String get() {
         return value;
     }
-    public void set(int v) {
+    public void set(String v) {
         value = v;
     }
     public Node getNext() {
